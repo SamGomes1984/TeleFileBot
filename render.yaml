@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: telefilebot
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    envVars:
+      - key: BOT_TOKEN
+        value: "7718388800:AAErZ_1EgOKa7EqWSVbIw-ATVr0jHZQxzCM"
+      - key: WASABI_ACCESS_KEY
+        value: "YZQ9RS20W1EVBC74W88M"
+      - key: WASABI_SECRET_KEY
+        value: "eBP3ojMvPXlBjzFUPBySPNFqQh24hTwaeFC019jD"
+      - key: WASABI_BUCKET_NAME
+        value: "telebot1"
+      - key: WASABI_REGION
+        value: "us-east-1"
+      - key: BASE_URL
+        value: "telefilebot-production.up.railway.app"
